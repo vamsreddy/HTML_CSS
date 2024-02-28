@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms Create</h1>
+    <form action="/clx">
+        <div>
+            <label for="name">firstname</label>
+            <input id="name" type="text" placeholder="firstname" name="name" required>
+        </div>
+        <div>
+            <label for="email">Enter your email</label>
+            <input type="email" id="email" name="email" placeholder="enter email" required>
+        </div>
+        <div>
+            <label for="password">Enter your password</label>
+            <input type="password" id="password" name="password" placeholder="enter password" required>
+        </div>
+       <div>
+            <label for="profile">Description</label>
+            <div>
+                <textarea id="profile" rows="5" cols="10" placeholder="Description" name="profile"></textarea>
+            </div>
+       </div>
+        <div>
+        <label for="level">Skill level</label>
+            <select id="level">
+                <option>beginner</option>
+                <option>intermediate</option>
+                <option>expert</option>
+            </select>
+        </div>
+        <div>
+            <label for="check">Are You Certified?</label>
+            <input type="checkbox" id="check">
+        </div>
+        <div>
+            <p>Select your Gender</p>
+            <label for="select">male</label>
+            <input type="radio" id="select" name="gender" value="male">
+            <label for="select">female</label>
+            <input type="radio" id="select" name="gender" value="female">
+            <label for="select">others</label>
+            <input type="radio" id="select" name="gender" value="others">
+        </div>
+        <div>
+            <label for="range">rate your self</label>
+            <input type="range" id="range" name="range">
+        </div>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
