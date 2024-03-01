@@ -1,0 +1,85 @@
+body {
+    font-family: Cormorant serif;
+}
+
+header {
+    margin: 20px 0;
+}
+
+h1 {
+    display: inline-block;
+    margin: 0 32px;
+    font-weight: 300;
+}
+
+.links {
+    display: inline-block;
+}
+
+.links a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+.links li {
+    display: inline-block;
+    margin: 0 12px;
+    font-size: 20px;
+}
+
+.links ul {
+    margin: 0;
+    padding: 0;
+}
+
+a.active {
+    border-bottom: 1px solid #000;
+}
+
+.gallery {
+    padding: 16px;
+}
+
+.card {
+    width: 49.75%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.card img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card h2 {
+    display: inline-block;
+    font-weight: 300;
+    margin: 8px 0 16px 0;
+}
+
+
+.about {
+    margin: 100px 0 100px 200px;
+    width: 40%;
+    max-width: 600px;
+}
+
+.about h3 {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.cta {
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin: 0 0 60px 0;
+}
+
+.contact p{
+    margin: 0;
+    font-size: 20px;
+}
