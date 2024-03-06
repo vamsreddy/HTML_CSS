@@ -1,0 +1,104 @@
+/* positioning the badge and button
+body {
+    height: 100vh;
+    background: radial-gradient(#0288d1, #01579b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 2px solid white;
+    padding: 16px 24px;
+    border-radius: 5px;
+    box-shadow: 0,5px,10px rgba(0,0,0,1);
+    position: relative;
+    background: rgba(0,0,0,0.3);
+}
+
+.badge {
+    border: 2px solid white;
+    background: green;
+    padding: 4px 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: -13px;
+    right: -12px;
+} */
+
+/* moving all the boxes to the corners of the root element
+.box1 {
+    background-color: #F44336;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .box2 {
+    background-color: #E91E63;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .box3 {
+    background-color: #9C27B0;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .box4 {
+    background-color: #3F51B5;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  } */
+
+
+/* moving the box in the container
+  .container {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    position: relative;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+  } */
+
+.sidebar {
+    border: 1px solid red;
+    background-color: red;
+    display: block;
+    padding: 60px;
+    position: fixed;
+    height: 100vh;
+    width: 100px;
+    right: 0;
+    margin: 0;
+}
+
+.sidebar button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
