@@ -83,3 +83,36 @@ a.active {
     margin: 0;
     font-size: 20px;
 }
+
+@media only screen and (max-width:1000px) {
+    .card {
+        width: 100%;
+    }
+    .about {
+        margin: 100px 0 100px 200px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .card {
+        padding: 0;
+    }
+
+    .gallery {
+        padding: 8px;
+    }
+
+    .about {
+        margin: 0 ;
+        min-width: 450px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .links ul {
+        padding: 0 20px;
+    }
+}
+

@@ -163,4 +163,32 @@ footer img {
     height: 2rem;
     margin: 0 8px;
 }
+
+@media only screen and (width <= 480px) {
+    .navbar .links a {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5px;
+        font-size: 1rem;
+    }
+    .navbar .contact {
+        padding: 8px 16px;
+    }
+
+    .hero-content {
+        padding: 16px 10%;
+        font-size: 2rem;
+    }
+
+    .two-column-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        float: none;
+    }
+
+    .two-column-section + p {
+        font-size: 3rem;
+    }
+}
   

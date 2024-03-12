@@ -1,0 +1,39 @@
+header ,  
+footer {
+    background-color: aqua;
+    height: 400px;
+}
+
+article {
+    background-color: blueviolet;
+    height: 400px;
+}
+
+aside {
+    background-color: coral;
+    height: 400px;
+}
+
+@media only screen and (min-width: 1000px){
+    
+    main {
+        display: flex;
+    }
+    article {
+        flex: 1 1 70%;
+    }
+
+    aside {
+        flex: 1 1 30%;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    article {
+        flex: 1 1 90%;
+    }
+
+    aside {
+        flex: 1 1 10%;
+    }
+}
