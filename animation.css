@@ -1,0 +1,73 @@
+/* div {
+    width: 300px;
+    height: 300px;
+    background-color: orangered;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: colorChange;
+        animation-duration: 5s;
+
+} */
+
+/* @keyframes colorChange {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: chartreuse;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+} */
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.spinner span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: cornflowerblue;
+    margin: 0 15px;
+    border-radius: 50%;
+    /* animation: jump 2s infinite ease-in-out ; */
+}
+
+.spinner span:nth-child(1) {
+    animation: jump 2s infinite ease-in-out ;
+}
+.spinner span:nth-child(2) {
+    animation: jump 2s 0.333s infinite ease-in-out ;
+}
+.spinner span:nth-child(3) {
+    animation: jump 2s 0.666s infinite ease-in-out ;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.3);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+}
