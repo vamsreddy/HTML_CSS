@@ -869,3 +869,13 @@ class Gradient {
  */
 var gradient = new Gradient();
 gradient.initGradient('#gradient-canvas');
+
+// Add this JavaScript to toggle the mobile navigation menu when the hamburger button is clicked
+// document.addEventListener('DOMContentLoaded', function () {
+//   const hamburgerButton = document.querySelector('.hamburger-button');
+//   const mobileNav = document.querySelector('.mobileNav');
+
+//   hamburgerButton.addEventListener('click', function () {
+//     mobileNav.classList.toggle('show');
+//   });
+// });
