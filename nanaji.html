@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPR</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style>
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Styling the navigation bar */
+        nav {
+            background-color: #0a78c5; /* Light blue color */
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow box */
+        }
+
+        /* Styling the logo */
+        .logo img {
+            width: 50px; /* Adjust size as needed */
+            height: auto;
+            margin-right: 10px; /* Adjust spacing */
+        }
+
+        /* Styling the navigation link */
+        .nav-links {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .nav-links h4 {
+            color: #fff;
+            text-decoration: none;
+            font-size: 25px; /* Adjust font size */
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Additional styling */
+        .content {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px 0 #ABABAB;
+        }
+
+        .heading {
+            font-size: 13px;
+            font-weight: bold;
+            padding: 8px 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: #dfe9f3 solid 1px !important;
+            background: -webkit-linear-gradient(top, #e8f1f9, #f7fbff) !important;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+        }
+
+        .form-group {
+            display: flex;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group select,
+        .form-group input {
+            width: 300px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .left-column {
+            font-size: 12px;
+            font-weight: 600;
+            position: relative;
+            top: 8px;
+            left: 20px;
+        }
+
+        .column-d {
+            font-size: 12px;
+            position: relative;
+            left: 18%;
+        }
+
+        .column-e {
+            font-size: 12px;
+            position: relative;
+            left: 20%;
+        }
+
+        .column-s {
+            position: relative;
+            top: 8px;
+        }
+
+        .btn {
+            width: 80px;
+            padding: 8px 16px;
+            font-size: 12px;
+            background-color: #0a78c5;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: relative;
+            left: 27%;
+        }
+
+        .btn:hover {
+            background-color: #085c96;
+        }
+
+        table {
+            font-size: 12px;
+            color: #fff;
+            width: 100%; /* Set the table width to 100% of its container */
+            border-collapse: collapse; /* Collapse the borders between cells */
+        }
+
+        th, td {
+            padding: 8px; /* Add some padding to the cells */
+            border: 1px solid #ddd; /* Add a border to each cell */
+            text-align: center;
+            position: relative;
+        }
+
+        th {
+            background-color: #0a78c5; /* Add a background color to header cells */
+        }
+
+        th:nth-child(1) {
+            width: 5%; /* Set the width of the first column */
+        }
+
+        th:nth-child(2) {
+            width: 25%; /* Set the width of the second column */
+        }
+
+        th:nth-child(3) {
+            width: 15%; /* Set the width of the third column */
+        }
+
+        th:nth-child(4) {
+            width: 20%; /* Set the width of the fourth column */
+        }
+
+        th:nth-child(5) {
+            width: 20%; /* Set the width of the fifth column */
+        }
+
+        th:nth-child(6) {
+            width: 15%; /* Set the width of the sixth column */
+        }
+
+        .filter-icon {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer; /* Add cursor pointer for indicating clickable */
+        }
+
+    </style>
+</head>
+
+<body>
+<nav>
+    <div class="logo">
+        <img src="{{asset('images/fci_logo.svg')}}" alt="Food Corporation of India">
+    </div>
+    <div class="nav-links">
+        <h4>Immovable Property Return (IPR) Status</h4>
+    </div>
+</nav>
+<div class="content">
+    <div><h4 class="heading">IPR Status FCI Officers who have filed returns/declaration</h4></div>
+    <form>
+        <div class="form-group required">
+            <label for="date" class="left-column">Select Statement As On Date : </label>
+            <select class="column-d" id="date" name="date">
+                <option value="">choose year</option>
+                <option value="1">2019</option>
+                <option value="2">2020</option>
+                <option value="3">2021</option>
+                <option value="4">2022</option>
+                <option value="5">2023</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="employee" class="left-column">Employee Search by : </label>
+            <input class="column-e" type="text" id="employee" name="employee" placeholder="Employee Name">
+        </div>
+        <input type="button" onclick="" class="btn btn-primary" value="Search" title="Search">
+    </form>
+    <div class="form-group">
+        <label class="column-s" for="search">Search: </label>
+        <input type="text" id="search" name="search" placeholder="">
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>S.No
+                    <span class="filter-icon">&#x25BC;</span> 
+                </th>
+                <th>Officer Name
+                    <span class="filter-icon">&#x25BC;</span>
+                </th>
+                <th>Submission Date
+                    <span class="filter-icon">&#x25BC;</span>
+                </th>
+                <th>Global Organization
+                    <span class="filter-icon">&#x25BC;</span>
+                </th>
+                <th>Allotment Year/Batch
+                    <span class="filter-icon">&#x25BC;</span>
+                </th>
+                <th>IPR Document
+                    <span class="filter-icon">&#x25BC;</span>
+                </th>
+            </tr>
+        </thead>
+    </table>
+</div>
+</body>
+</html>

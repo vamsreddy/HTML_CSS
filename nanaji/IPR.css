@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: #0a78c5 ;
+    padding: 18px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.container-middle {
+    width: 97%;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px 0 #ABABAB;;
+}
+
+.form-group {
+    display: flex;
+}
